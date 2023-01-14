@@ -1,0 +1,146 @@
+body {
+  background-image: url("../img/back.svg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// header
+
+// section styles
+.sectioncenter {
+  @extend %center;
+  @include center(flex, center, center);
+  .sectionimg {
+    max-width: 1400px;
+    width: 100%;
+    height: 900px;
+    background: rgba(22, 16, 55, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: $var50;
+    @include center(flex, center, flex-start);
+    position: relative;
+    margin-top: $var25;
+    margin-bottom: 45px;
+
+    .headerwrap {
+      @include flex(flex, space-between);
+      width: 1200px;
+      align-items: center;
+      margin-top: 75px;
+      .navigation {
+        max-width: 590px;
+        width: 100%;
+
+        .ul1 {
+          @include flex(flex, space-between);
+          font-size: $var20;
+
+          font-family: "Overpass";
+          transition: all 1s ease;
+          &:hover {
+            @extend %animation;
+          }
+          li {
+            a {
+              color: $color1;
+            }
+          }
+        }
+      }
+      .icon {
+        border: solid 2px $colormain;
+        border-radius: $var25;
+        width: 54px;
+        @include center(flex, space-between, center);
+        transition: all 0.3s linear;
+        &:hover {
+          width: 200px;
+          @extend %animation;
+
+          p {
+            display: block;
+          }
+        }
+        p {
+          display: none;
+          font-size: $var25;
+          margin-right: 15px;
+          font-family: "Overpass";
+          color: $color1;
+        }
+      }
+    }
+    .maintext {
+      position: absolute;
+      top: 250px;
+      left: 150px;
+
+      .context {
+        max-width: 800px;
+        width: 100%;
+        h1 {
+          font-family: "Jost";
+          font-size: 75px;
+          color: $color1;
+          .purple {
+            color: $colormain;
+          }
+        }
+      }
+      .parcontext {
+        margin-top: 40px;
+        p {
+          font-size: $var20;
+          color: #707070;
+          margin-bottom: 10px;
+          font-family: "Overpass";
+        }
+      }
+    }
+    .buttonwrap {
+      position: absolute;
+      top: 525px;
+      left: 150px;
+      .button {
+        width: 200px;
+        height: $var50;
+        border-radius: $var25;
+        background-color: transparent;
+        font-size: $var25;
+        border: solid 2px $colormain;
+        cursor: pointer;
+        a {
+          color: $color1;
+        }
+        &:hover {
+          @extend %animation;
+        }
+      }
+    }
+    .icons {
+      position: absolute;
+      top: 700px;
+      left: 150px;
+      max-width: 440px;
+      width: 100%;
+      @include flex(flex, space-between);
+      .iconbox {
+        @include column(flex, column, center);
+        p {
+          margin-top: $var20;
+          color: $color1;
+          font-family: "Overpass";
+        }
+      }
+      .img1 {
+        margin: 13px;
+      }
+    }
+    .astro {
+      position: absolute;
+      top: 300px;
+      right: -150px;
+    }
+  }
+}

@@ -1,0 +1,345 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectioncenter {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sectioncenter .sectionimg .buttonwrap .button:hover, .sectioncenter .sectionimg .headerwrap .icon:hover, .sectioncenter .sectionimg .headerwrap .navigation .ul1:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff00fa, 0 0 82px #ff00fa, 0 0 92px #ff00fa, 0 0 102px #ff00fa, 0 0 151px #ff00fa;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Medium.eot");
+  src: url("../fonts/Jost-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Jost-Medium.woff2") format("woff2"), url("../fonts/Jost-Medium.woff") format("woff"), url("../fonts/Jost-Medium.ttf") format("truetype"), url("../fonts/Jost-Medium.svg#Jost-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-Light.eot");
+  src: url("../fonts/Overpass-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Overpass-Light.woff2") format("woff2"), url("../fonts/Overpass-Light.woff") format("woff"), url("../fonts/Overpass-Light.ttf") format("truetype"), url("../fonts/Overpass-Light.svg#Overpass-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-image: url("../img/back.svg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectioncenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectioncenter .sectionimg {
+  max-width: 1400px;
+  width: 100%;
+  height: 900px;
+  background: rgba(22, 16, 55, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+.sectioncenter .sectionimg .headerwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+}
+.sectioncenter .sectionimg .headerwrap .navigation {
+  max-width: 590px;
+  width: 100%;
+}
+.sectioncenter .sectionimg .headerwrap .navigation .ul1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-family: "Overpass";
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.sectioncenter .sectionimg .headerwrap .navigation .ul1 li a {
+  color: white;
+}
+.sectioncenter .sectionimg .headerwrap .icon {
+  border: solid 2px #f292f0;
+  border-radius: 25px;
+  width: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.sectioncenter .sectionimg .headerwrap .icon:hover {
+  width: 200px;
+}
+.sectioncenter .sectionimg .headerwrap .icon:hover p {
+  display: block;
+}
+.sectioncenter .sectionimg .headerwrap .icon p {
+  display: none;
+  font-size: 25px;
+  margin-right: 15px;
+  font-family: "Overpass";
+  color: white;
+}
+.sectioncenter .sectionimg .maintext {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+.sectioncenter .sectionimg .maintext .context {
+  max-width: 800px;
+  width: 100%;
+}
+.sectioncenter .sectionimg .maintext .context h1 {
+  font-family: "Jost";
+  font-size: 75px;
+  color: white;
+}
+.sectioncenter .sectionimg .maintext .context h1 .purple {
+  color: #f292f0;
+}
+.sectioncenter .sectionimg .maintext .parcontext {
+  margin-top: 40px;
+}
+.sectioncenter .sectionimg .maintext .parcontext p {
+  font-size: 20px;
+  color: #707070;
+  margin-bottom: 10px;
+  font-family: "Overpass";
+}
+.sectioncenter .sectionimg .buttonwrap {
+  position: absolute;
+  top: 525px;
+  left: 150px;
+}
+.sectioncenter .sectionimg .buttonwrap .button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 25px;
+  border: solid 2px #f292f0;
+  cursor: pointer;
+}
+.sectioncenter .sectionimg .buttonwrap .button a {
+  color: white;
+}
+.sectioncenter .sectionimg .icons {
+  position: absolute;
+  top: 700px;
+  left: 150px;
+  max-width: 440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sectioncenter .sectionimg .icons .iconbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectioncenter .sectionimg .icons .iconbox p {
+  margin-top: 20px;
+  color: white;
+  font-family: "Overpass";
+}
+.sectioncenter .sectionimg .icons .img1 {
+  margin: 13px;
+}
+.sectioncenter .sectionimg .astro {
+  position: absolute;
+  top: 300px;
+  right: -150px;
+}/*# sourceMappingURL=global.css.map */
